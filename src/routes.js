@@ -1,4 +1,4 @@
-import {BrowserRouter, Route, Routes, defer} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 
 
@@ -7,6 +7,8 @@ import Filme from './pages/Filme';
 import Header from './components/Header';
 import Erro from './pages/Erro';
 import Favoritos from "./pages/Favoritos";
+
+import Footer from "./components/Footer";
 
 
 function RoutesApp(){
@@ -20,6 +22,8 @@ function RoutesApp(){
 
                 <Route path="*" element={ <Erro/> } />
             </Routes>
+            
+            <Footer />
         </BrowserRouter>
     )
 }
